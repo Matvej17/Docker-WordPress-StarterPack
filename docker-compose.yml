@@ -8,7 +8,7 @@ services:
     volumes:
       - ./config/php.conf.uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./wp-app:/var/www/html # Full wordpress project
-      #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
+      - ./plugins:/var/www/html/wp-content/plugins # My starter Plugins
       - ./mgraphics/:/var/www/html/wp-content/themes/mgraphics # Theme development
     environment:
       WORDPRESS_DB_HOST: db

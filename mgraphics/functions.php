@@ -13,3 +13,24 @@ function mgraphics_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mgraphics_scripts' );
 
+
+/**
+ * Vypnutie Wysivyg editora v administrácii.
+ */
+function remove_editor() {
+  remove_post_type_support('page', 'editor');
+}
+
+add_action('admin_init', 'remove_editor');
+
+
+/**
+ * Custom thumbnails
+ */
+function wpse_setup_theme() {
+  add_theme_support( 'post-thumbnails' );
+  
+  add_image_size( 'custom', 180, 180, true );
+}
+
+add_action( 'after_setup_theme', 'wpse_setup_theme' );

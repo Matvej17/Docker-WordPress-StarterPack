@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'dnd-custom-font';
+  src:  url('../fonts/icomoon.eot?14xd7m');
+  src:  url('../fonts/icomoon.eot?14xd7m#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?14xd7m') format('truetype'),
+    url('../fonts/icomoon.woff?14xd7m') format('woff'),
+    url('../fonts/icomoon.svg?14xd7m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="dnd-icon-"], [class*=" dnd-icon-"] {
+  font-family: 'dnd-custom-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dnd-icon-blank-file:before { content: "\e900";}
+.dnd-icon-remove:before { content: "\e901";}
+.icon-upload:before { content: "\e902";}
+
+/* Delete Status */
+.dnd-icon-remove.deleting { outline:none; font-family : inherit !important; font-size:12px; color:#000; font-weight:500; }
+.dnd-icon-remove.deleting:before {content : '';}
+
+.wpcf7-drag-n-drop-file.d-none {
+	display:none;
+	opacity:0;
+	visibility:hidden;
+	position:absolute;
+	top:0;
+}
+
+/* Upload Status */
+.dnd-upload-status {
+	display:flex;
+	padding:4px 0;
+	align-items:center;
+	position:relative;
+}
+
+/* Progress bar - Image */
+.dnd-upload-status .dnd-upload-image {
+	width:40px;
+	height:40px;
+	border:1px solid #a5a5a5;
+	text-align:center;
+	border-radius:100%;
+	position:relative;
+}
+.dnd-upload-status .dnd-upload-image.has-bg {
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	border:0;
+	transition: transform 0.3s ease;
+	max-width:40px;
+	width:100%;
+}
+.dnd-upload-status .dnd-upload-image.has-bg:hover {
+	transform: scale(1.5);
+}
+.dnd-upload-status .dnd-upload-image span {
+	font-size:20px;
+	color:#222;
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    left: 50%;
+}
+.dnd-upload-status .dnd-upload-image.has-bg span { opacity:0; z-index:-200; }
+
+/* Progress bar - Image Details ( Name and Size ) */
+.dnd-upload-status .dnd-upload-details {
+	padding-left:10px;
+	width: calc(100% - 40px);
+}
+.dnd-upload-status .dnd-upload-details .name {color:#016d98; padding:4px 0; padding-right:25px; display:flex; }
+.dnd-upload-status .dnd-upload-details .name span { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; padding-right:10px; }
+.dnd-upload-status .dnd-upload-details .name em {color:#444242;	font-weight:700; }
+
+/* Remove Upload File */
+.dnd-upload-status .dnd-upload-details .remove-file {
+	position:absolute;
+	right:0;
+	top:6px;
+	text-decoration:none;
+	box-shadow:none;
+	outline:none;
+}
+
+.dnd-upload-status .dnd-upload-details span.has-error { color:#f50505; }
+
+/* Progress Loading */
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar {
+	display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #565555;
+    height: 14px;
+}
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
+    background: #4CAF50;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+    color: #fff;
+    height: 100%;
+	width:0;
+	line-height:14px;
+}
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span.complete { width:100%!important; padding-right:5px; }
+.dnd-upload-counter { position:absolute; right:5px; bottom:3px; font-size:12px; }
+
+/* CodeDropz Upload Plugin */
+.codedropz-upload-handler {
+	border:2px dashed #c5c5c5;
+	border-radius:5px;
+	margin-bottom:10px;
+	position:relative;
+}
+.codedropz-upload-container {
+	padding:15px 20px;
+}
+
+.codedropz-upload-inner {
+	overflow:hidden;
+	width:100%;
+	white-space: nowrap;
+	text-align:center;
+	text-overflow: ellipsis;
+	font-weight:inherit;
+}
+.codedropz-upload-inner .codedropz-btn-wrap a.cd-upload-btn {
+	text-decoration:none;
+	box-shadow:none;
+}
+.codedropz-upload-inner h3 {
+	margin:5px 0;
+	font-size:30px;
+	line-height:32px;
+}
+
+/* Add border on dragenter, drag etc */
+.codedropz-dragover {
+	border-color:#6b6a6a;
+}
+
+.codedropz-upload-wrapper span.has-error-msg {
+	display:inline-block;
+	color:#ff0000;
+	padding:5px 0;
+	font-style:italic;
+}
+
+/* Jquery Validation For Contact Form 7 */
+.wpcf7-form label.error-new {
+    color: #900;
+    font-size: 11px;
+    float: none;
+    padding-left: 5px;
+}
+.wpcf7-form .codedropz-upload-wrapper.invalid .codedropz-upload-handler{
+	border-bottom-color: #900;
+    border-bottom-style: solid;
+}
+/* END : Jquery Validation CF7 */
+
+@media screen and (max-width: 767px) {
+	.dnd-upload-status .dnd-upload-details .name em { font-weight:normal; }
+	.dnd-upload-status .dnd-upload-details .name { padding-right:60px; }
+	.codedropz-upload-inner h3 { font-size:22px; }
+}

@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Drag and Drop Multiple File Upload - Contact Form 7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-19 22:19+0000\n"
+"PO-Revision-Date: 2020-07-31 09:13+0800\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n"
+"%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2\n"
+
+#: inc/dnd-upload-cf7.php:415
+msgid "Browse Files"
+msgstr "Выбрать файл"
+
+#: inc/dnd-upload-cf7.php:846
+msgid "Browse Text"
+msgstr "Текст кнопки Файл"
+
+#: inc/dnd-upload-cf7.php:422
+msgid "deleting"
+msgstr "удаление"
+
+#: inc/dnd-upload-cf7.php:413
+msgid "Drag & Drop Files Here"
+msgstr "Текст для поля Файл"
+
+#: inc/dnd-upload-cf7.php:838
+msgid "Drag & Drop Text"
+msgstr "Текст поля Загрузка файлов"
+
+#. Name of the plugin
+msgid "Drag and Drop Multiple File Upload - Contact Form 7"
+msgstr "Форма загрузки файлов для плагина Contact Form 7"
+
+#: inc/dnd-upload-cf7.php:851
+msgid "Error Message"
+msgstr "Ошибка"
+
+#: inc/dnd-upload-cf7.php:859
+msgid "Failed to Upload"
+msgstr "Загрузка не удалась"
+
+#: inc/dnd-upload-cf7.php:855
+msgid "File exceeds server limit"
+msgstr "Превышен лимит размера файлов на сервере"
+
+#: inc/dnd-upload-cf7.php:863
+msgid "Files too large"
+msgstr "Файлы слишком большие"
+
+#. Author of the plugin
+msgid "Glen Don L. Mongaya"
+msgstr "Glen Don L. Mongaya"
+
+#. Author URI of the plugin
+msgid "http://codedropz.com"
+msgstr "http://codedropz.com"
+
+#. URI of the plugin
+msgid "https://profiles.wordpress.org/glenwpcoder"
+msgstr "https://profiles.wordpress.org/glenwpcoder"
+
+#: inc/dnd-upload-cf7.php:867
+msgid "Invalid file Type"
+msgstr "Неверный тип файла"
+
+#: inc/dnd-upload-cf7.php:871
+msgid "Max File Limit"
+msgstr "Максимальный размер файла"
+
+#: inc/dnd-upload-cf7.php:144
+msgid "Minimum file upload at least"
+msgstr "Размер файла от"
+
+#: inc/dnd-upload-cf7.php:875
+msgid "Mininimum File"
+msgstr "Минимум файлов"
+
+#: inc/dnd-upload-cf7.php:542
+msgid "multiple file upload"
+msgstr "форма загрузки нескольких файлов"
+
+#: inc/dnd-upload-cf7.php:142
+#, php-format
+msgid ""
+"Note : Some of the files are not uploaded ( Only %count% files allowed )"
+msgstr ""
+"Внимание: некоторые файлы не были загружены ( загружено %count% файлов )"
+
+#: inc/dnd-upload-cf7.php:414
+msgid "or"
+msgstr "или"
+
+#: inc/dnd-upload-cf7.php:423
+msgid "Remove"
+msgstr "Удалить"
+
+#: inc/dnd-upload-cf7.php:829
+msgid "Send Attachment as links?"
+msgstr "Отправить ссылки на скачивание"
+
+#: inc/dnd-upload-cf7.php:138
+msgid "The uploaded file exceeds the maximum upload size of your server."
+msgstr "Загруженный файл превышает разрешённый размер."
+
+#: inc/dnd-upload-cf7.php:143
+msgid "This field is required."
+msgstr "Поле обязательное"
+
+#. Description of the plugin
+msgid ""
+"This simple plugin create Drag & Drop or choose Multiple File upload in your "
+"Confact Form 7 Forms."
+msgstr ""
+"Плагин позволяет создать поле для загрузки файлов в плагине Contact Form 7"
+
+#: inc/dnd-upload-cf7.php:141
+msgid "Uploaded file is not allowed for file type"
+msgstr "Данный тип файлов не разрешён"
+
+#: inc/dnd-upload-cf7.php:140
+msgid "Uploaded file is too large"
+msgstr "Загруженный файл слишком велик"
+
+#: inc/dnd-upload-cf7.php:834
+msgid "Uploader Info"
+msgstr "Информация о загрузчике"
+
+#: inc/dnd-upload-cf7.php:139
+msgid "Uploading a file fails for any reason"
+msgstr "Иная ошибка загрузки файла"
+
+#: inc/dnd-upload-cf7.php:425
+msgid "of"
+msgstr "из"
